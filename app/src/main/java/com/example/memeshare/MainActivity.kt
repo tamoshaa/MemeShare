@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         progressBar.visibility = View.VISIBLE
         // Instantiate the RequestQueue.
 //        val queue = Volley.newRequestQueue(this)
-        val url = "https://meme-api.herokuapp.com/gimme"
+        val url = "https://meme-api.herokuapp.com/gimme/wholesomememes"
 
 // Request a string response from the provided URL.
         val jsonObjectRequest = JsonObjectRequest(
@@ -81,8 +81,8 @@ class MainActivity : AppCompatActivity() {
     fun shareMeme(view: View) {
         val intent = Intent(Intent.ACTION_SEND)
         intent.type = "text/plain"
-        intent.putExtra(Intent.EXTRA_TEXT, "Checkout this cool meme from Reddit $currentImageUrl")
-        val chooser = Intent.createChooser(intent, "share this meme :)")
+        intent.putExtra(Intent.EXTRA_TEXT, "Checkout this cool meme :) $currentImageUrl")
+        val chooser = Intent.createChooser(intent, "Share this meme")
         startActivity(chooser)
     }
         fun nextMeme(view: View) {

@@ -28,7 +28,7 @@
         app:layout_constraintRight_toLeftOf="@id/guideline"
        android:onClick="shareMeme"
         android:padding="30dp"
-        android:background="#FFAB8DE1"
+        android:background="#E6E4EC"
 
         />
     <Button
@@ -41,7 +41,7 @@
         app:layout_constraintLeft_toRightOf="@id/guideline"
         android:onClick="nextMeme"
         android:padding="30dp"
-        android:background="#FFAB8DE1"
+        android:background="#E6E4EC"
 
 
         />
